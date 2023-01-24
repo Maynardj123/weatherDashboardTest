@@ -75,7 +75,7 @@ function getForecast (forecastData){
 // create function to return lat and lon
 function getGeo (city){
 
-    var geoUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`
+    var geoUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`
 
     fetch(geoUrl).then(function (response) {
         if (response.ok) {
