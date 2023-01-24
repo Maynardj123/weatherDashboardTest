@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./styles.CSS" />
+  <title>Weather Dashboard</title>
+</head>
+
+
+<body class="flex-column">
+  <header class="hero">
+    <h1 class="app-title">Weather Dashboard</h1>
+    
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+
+    <div class="col-12 col-md-4">
+    
+      <div class="sidebar">
+        <form id="user-form" class="card-body">
+          <label class="search" for="search">Search for a City:</label>
+          <input name="search" id="search" type="text" autofocus="true" class="form-input" />
+          <button type="" class="btn" id="searchbtn">Search</button>
+        </form>
+        <div class="searchHistorys"></div>
+        <div id="user-form2" class="card-body">
+          <button type="" class="btnC" id="atlanta">Atlanta</button>
+        </div>
+
+        <div id="user-form3" class="card-body">
+          <button type="" class="btnC" id="denver">Denver</button>
+        </div>
+
+        <div id="user-form4" class="card-body">
+          <button type="" class="btnC" id="seattle">Seattle</button>
+        </div>
+
+        <div id="user-form5" class="card-body">
+          <button type="" class="btnC" id="sanFran">San Francisco</button>
+        </div>
+
+        <div id="user-form2" class="card-body">
+          <button type="" class="btnC" id="orlando">Orlando</button>
+        </div>
+
+        <div id="user-form3" class="card-body">
+          <button type="" class="btnC" id="newYork">New York</button>
+        </div>
+
+        <div id="user-form4" class="card-body">
+          <button type="" class="btnC" id="chicago">Chicago</button>
+        </div>
+
+        <div id="user-form5" class="card-body">
+          <button type="" class="btnC" id="austin">Austin</button>
+        </div>
+    
+      </div>
+      
+    
+      <div class="contentBox">
+        <div class="current">
+          <h3 class="cityName"></h3>
+          <p>Tempurature:</p>
+          <p class="temp" ></p>
+          <p>Wind:</p>
+          <p class="wind" ></p>
+          <p>Humidity:</p>
+          <p class="humidity" ></p>
+        </div>
+
+        <div class="forecast">
+          <h1>5-Day Forecast</h1>
+          <div id="card-1" class="card">
+           <h3 class="day2"></h3>
+           <p>Tempurature:</p>
+           <p class="temp2" ></p>
+           <p>wind:</p>
+           <p class="wind2" ></p>
+           <p>Humidity:</p>
+           <p class="humidity2" ></p>
+          </div>
+
+          <div id="card-2" class="card">
+            <h3 class="day3"></h3>
+            <p>Tempurature</p>
+            <p class="temp3" ></p>
+            <p>Wind</p>
+            <p class="wind3" ></p>
+            <p>Humidity</p>
+            <p class="humidity3" ></p>
+          </div>
+
+          <div id="card-3" class="card">
+            <h3 class="day4"></h3>
+            <p>Tempurature</p>
+            <p class="temp4" ></p>
+            <p>Wind</p>
+            <p class="wind4" ></p>
+            <p>Humidity</p>
+            <p class="humidity4" ></p>
+          </div>
+        
+          <div id="card-4" class="card">
+            <h3 class="day5"></h3>
+            <p>Tempurature</p>
+            <p class="temp5" ></p>
+            <p>Wind</p>
+            <p class="wind5" ></p>
+            <p>Humidity</p>
+            <p class="humidity5" ></p>
+          </div>
+
+          <div id="card-5" class="card">
+            <h3 class="day6"></h3>
+            <p>Tempurature</p>
+            <p class="temp6" ></p>
+            <p>Wind</p>
+            <p class="wind6" ></p>
+            <p>Humidity</p>
+            <p class="humidity6" ></p>
+          </div>
+      
+        </div>
+      </div>
+    
+
+
+    </div>
+
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+  <script src="./homepage.js"></script>
+</body>
+
+</html>
